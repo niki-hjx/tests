@@ -1,0 +1,374 @@
+/*
+* @Author: Aiscry
+* @Date:   2018-06-20 23:26:58
+* @Last Modified by:   Aiscry
+* @Last Modified time: 2018-06-21 02:08:48
+*/
+body {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.top {
+    width: 100%;
+    height: 84px;
+    background: #fff;
+    overflow: hidden;
+
+}
+.wrap{
+	width:100%;
+}
+.box{
+	width:980px;
+	overflow: hidden;
+	margin: auto;
+}
+
+.logo {
+    width: 215px;
+    height: 36px;
+    margin-top: 25px;
+    float: left;
+
+}
+
+.img-logo {
+    width: 215px;
+}
+
+.search {
+    height: 36px;
+    width: 367px;
+    margin-left: 140px;
+    margin-top: 25px;
+    float: left;
+    border: 2px solid #f84e4e;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+
+}
+
+.span-search {
+    display: inline-block;
+    width: 30px;
+    height: 36px;
+    float: left;
+    background: url(../images/search.png) no-repeat 7px 10px;
+    position: relative;
+}
+
+.input-search {
+    float: left;
+    width: 257px;
+    height: 37px;
+    border: 0px;
+
+}
+
+.label-search {
+    width: 80px;
+    height: 36px;
+    float: left;
+    color: #fff;
+    text-align: center;
+    line-height: 36px;
+    background: #f84e4e;
+    cursor: pointer;
+}
+
+.btn-login {
+    width: 100px;
+    height: 38px;
+    margin-top: 25px;
+    float: left;
+    margin-left: 110px;
+    border: 1px solid #d9d9d9;
+    background: #f9f9f9;
+    font-size: 14px;
+    color: #444;
+    border-radius: 1px;
+    cursor: pointer;
+}
+
+.btn-login:hover {
+    background: #fff;
+}
+
+.title {
+	width: 100%;
+    height: 41px;
+    background: #f84e4e;
+    z-index: 2;
+    position: relative;
+}
+.navigation{
+	position: relative;
+	width:980px;
+	overflow: hidden;
+	margin: auto;
+	overflow: initial !important;
+}
+.fix{
+	position: fixed;
+    top:0;
+}
+.fix .search1{
+    display: block;
+    position: absolute;
+    right: 0px;
+    background: #fff;
+    z-index: 99;
+  
+}
+.nav-title {
+    width: 980px;
+    height: 41px;
+    line-height: 41px;
+  	float: left;
+
+}
+
+.ul_title {
+	margin: 0;
+	padding: 0;
+    width: 980px;
+    list-style: none;
+    line-height: 41px;
+}
+
+.ul_title > li {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+    width: 140px;
+    height: 40px;
+    float: left;
+    text-align: center;
+    position: relative;
+    background-color:#f84e4e;
+    z-index: 1;
+}
+
+.ul_title > li p{
+	margin: 0;
+	padding: 0;
+    color:#fff;
+    
+}
+.ul_title > li p a{
+    color:#fff;
+    text-decoration: none;
+}
+.ul_title > li p:hover {
+    color: #fff;
+    background: rgb(227, 47, 47);
+}
+
+.uls {
+	margin: 0;
+	padding: 0;
+    display: none;
+    list-style: none;
+    position: absolute;
+    left:0;
+    top:41px;
+    width:100%;
+}
+.uls li {
+	margin: 0;
+	padding: 0;
+    border-bottom: 1px dashed gray;
+    height: 36px;
+    line-height: 36px;
+    background: #fff;
+    cursor: pointer;
+}
+.uls>li:hover{
+	color: red;
+}
+.select::after {
+    content: "";
+    background: url(../images/arrow_pulldown_d8d45bc.png);
+    display: inline-block;
+    width: 7px;
+    height: 4px;
+    position: relative;
+    left: 5px;
+    top: -3px;
+}
+
+.tele::before {
+    content: "";
+    background: url(../images/icon_download_nav_d86e83c.png);
+    display: inline-block;
+    width: 14px;
+    height: 24px;
+    left: -8px;
+    position: relative;
+    top: 5px;
+}
+
+.search1 {
+    width: 30px;
+    height: 26px;
+    float: right;
+ 	border-radius: 27px;
+    overflow: hidden;
+    margin-top: 10px;
+    display: none;
+    transition: all .5s ease 0s;
+}
+
+
+.label-search1 {
+    width: 24px;
+    height: 26px;
+    right: 0px;
+    cursor: pointer;
+    position: relative;
+    float: right;
+    background: #fff;
+    z-index: 100;
+}
+
+.label-search1 i {
+    background: url(../images/search.png) no-repeat;
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 4px;
+}
+
+.input-search1 {
+    width: 0;
+    height: 26px;
+    border-radius: 5px;
+    border: 0 ;
+	text-indent: 15px;
+}
+.banner1{
+	width: 100%;
+	background: url(../images/download_01_b018d82.png) no-repeat center;
+	height: 513px;
+}
+.down{
+	height: 100%;
+	padding: 0;
+	margin: 0 auto;
+	width: 980px;
+	position: relative;
+}
+.down .ios{
+	display: block;
+	width: 194px;
+	height: 52px;
+	position: absolute;
+	left: 50%;
+	margin-left: 75px;
+	top: 50%;
+	background-image: url(../images/download_z_ee03d62.png);
+	background-position: -2px -348px;
+	background-repeat: no-repeat;
+}
+.down .ios:hover{
+	background-image: url(../images/download_z_ee03d62.png);
+	background-position: -2px -403px;
+}
+.down .android{
+	display: block;
+	width: 194px;
+	height: 52px;
+	position: absolute;
+	left: 50%;
+	margin-left: 75px;
+	margin-top: 95px;
+	top: 50%;
+	background-image: url(../images/download_z_ee03d62.png);
+	background-position: -2px -458px;
+	background-repeat: no-repeat;
+}
+.down .android:hover{
+	background-image: url(../images/download_z_ee03d62.png);
+	background-position: -2px -513px;
+}
+.banner2{
+	width: 100%;
+	background: url(../images/download_02_8b53b62.png) no-repeat center;
+	height: 438px;
+}
+.banner3{
+	width: 100%;
+	background: url(../images/download_03_1a4b2b0.png) no-repeat center;
+	height: 438px;
+}
+.banner4{
+	width: 100%;
+	background: url(../images/download_04_15d5d0c.png) no-repeat center;
+	height: 438px;
+}
+.banner5{
+	width: 100%;
+	background: url(../images/download_05_b3fdc95.png) no-repeat center;
+	height: 438px;
+}
+.banner6{
+	width: 100%;
+	background: url(../images/download_06_35f172a.png) no-repeat center;
+	height: 438px;
+}
+.down .rios{
+	display: block;
+	width: 196px;
+	height: 52px;
+	position: absolute;
+	left: 50%;
+	margin-top: 30px;
+	margin-left: 25px;
+	top: 39%;
+	background-image: url(../images/download_z_ee03d62.png);
+	background-position: -2px -568px;
+	background-repeat: no-repeat;
+}
+.down .rios:hover{
+	background-image: url(../images/download_z_ee03d62.png);
+	background-position: -2px -623px;
+}
+.down .randroid{
+	display: block;
+	width: 196px;
+	height: 52px;
+	position: absolute;
+	left: 50%;
+	margin-left:25px;
+	margin-top: 100px;
+	top: 39%;
+	background-image: url(../images/download_z_ee03d62.png);
+	background-position: -2px -678px;
+	background-repeat: no-repeat;
+}
+.down .randroid:hover{
+	background-image: url(../images/download_z_ee03d62.png);
+	background-position: -2px -733px;
+}
+.footer {
+    width: 100%;
+    height: 60px;
+    margin-top: 36px;
+    background: #f84e4e;
+    bottom: 0px;
+    position: relative;
+}
+.footer p {
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 10px
+}
+.footer p a {
+    text-decoration: none;
+    color: #fff;
+}

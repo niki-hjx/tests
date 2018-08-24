@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="css/download.css">
+</head>
+<body>
+	<div class="top wrap">
+	<div class="box">
+    <div class="logo"><a href="首页.html"><img src="images/logo_9699ecd.png" alt="" class="img-logo"></a></div>
+    <div class="search">
+        <span class="span-search"></span>
+        <input type="text" class="input-search" placeholder="搜索礼物、攻略">
+        <label class="label-search">搜索</label>
+    </div>
+    <button class="btn-login">登录/注册</button>
+	</div>
+</div>
+<div class="title">
+	<div class="navigation">
+	    <nav class="nav-title">
+	        <ul class="ul_title">
+	            <li>
+	                <p><a href="首页.html">首页</a></p>
+	            </li>
+	            <li>
+	                <p class="select"><a href="赠送对象.html">赠送对象</a></p>
+	                <ul class="uls">
+	                    <li>自己</li>
+	                    <li>男票</li>
+	                    <li>女盆友</li>
+	                    <li>闺蜜们</li>
+	                    <li>基友</li>
+	                    <li>爸爸妈妈</li>
+	                    <li>小盆友</li>
+	                    <li>同事</li>
+	                </ul>
+	            </li>
+	            <li>
+	                <p class="select"><a href="赠送场合.html">赠送场合</a></p>
+	                <ul class="uls">
+	                    <li>新年</li>
+	                    <li>生日</li>
+	                    <li>纪念日</li>
+	                    <li>结婚</li>
+	                    <li>感谢</li>
+	                    <li>情人节</li>
+	                    <li>乔迁</li>
+	                    <li>圣诞节</li>
+	                </ul>
+	            </li>
+	            <li>
+	                <p class="select"><a href="character.html">Ta的个性</a></p>
+	                <ul class="uls">
+	                    <li>美物</li>
+	                    <li>手工</li>
+	                    <li>吃货</li>
+	                    <li>萌萌哒</li>
+	                    <li>动漫迷</li>
+	                    <li>小清新</li>
+	                    <li>科技范</li>
+	                </ul>
+	            </li>
+	            <li>
+	                <p class="tele"><a href="download.html">下载手机版</a></p>
+	            </li>
+	            <li>
+	                <p><a href="enterprise.html">礼物说企业版</a></p>
+	            </li>
+	        </ul>
+	    </nav>
+	    <div class="search1">
+	        <input type="text" placeholder="搜索礼物、攻略" class="input-search1"/>
+	        <label for="" class="label-search1"><i></i></label>
+	    </div>
+    </div>
+</div>
+<div class="banner1">
+	<div class="down">
+		<a class="ios" href=""></a>
+		<a class="android" href=""></a>
+	</div>
+</div>
+<div class="banner2"></div>
+<div class="banner3"></div>
+<div class="banner4"></div>
+<div class="banner5"></div>
+<div class="banner6">
+	<div class="down">
+		<a class="rios" href=""></a>
+		<a class="randroid" href=""></a>
+	</div>
+</div>
+<div class="footer">
+	<div class="box">
+		    <p>
+		        <span>©</span>2014 - 2018 Liwushuo.com 北京礼物说科技有限公司 电信与信息服务业务经营许可证150653号 京ICP备15031023号-1<br>
+		        <a href="">首页</a>|
+		        <a href="">商务合作</a>|
+		        <a href="">关于我们</a>|
+		        <a href="">WindowsPhone 版下载</a>
+		        <a href="">&nbsp;&nbsp;电话：13513303441</a>
+		    </p>
+	</div>
+</div>
+<script src="js/jquery.min.js"></script>
+<script>
+	    	$('.label-search').click(function(event){
+            if($('.input-search').val()==''){
+                alert('请先输入搜索关键字');
+            }
+        });
+   		//搜索输入
+   		$('.label-search1').click(function(event){
+   			$('.search1').css('width','250px');
+   			$('.input-search1').css('width','200px');
+   		});
+   		
+   		
+   		 $('.search1').mouseleave(function(event){
+   			$('.search1').css('width','30px');
+   			$('.input-search1').css('width','0px');
+   		});
+        //导航栏
+        $('.ul_title>li').mouseenter(function(){
+    		$(this).children('.select').css('background','#e32f2f');
+    		$(this).children('.uls').stop().fadeIn();
+    	})
+    	$('.ul_title>li').mouseleave(function(){
+    		$(this).children('.select').css('background','#f84e4e')
+    		$(this).children('.uls').stop().fadeOut();
+
+    	})
+        //导航栏固定
+ 		$('.slide-top').click(function(){$('html,body').animate({scrollTop: '0px'}, 800);});
+ 		$(window).scroll(function(event){
+ 			if($(window).scrollTop()>222){
+ 				$('.title').addClass('fix');
+                $('.slide-top').css('display','block');
+ 			}
+ 			else{
+ 				$('.title').removeClass('fix');
+                 $('.slide-top').css('display','none');
+ 			}
+ 		})
+</script>
+</body>
+</html>
